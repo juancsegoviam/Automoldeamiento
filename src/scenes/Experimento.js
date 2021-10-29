@@ -54,10 +54,10 @@ export default class Experimento extends Phaser.Scene
 {
     preload()
     {
-        this.load.image('bullet', '../assets/bullet.png');
-        this.load.image('player', '../assets/player.png');
-        this.load.spritesheet('cent', '../assets/cent.png', { frameWidth: 50 , frameHeight: 50 });
-        this.load.spritesheet('stimulus', '../assets/sti.png', { frameWidth: 50 , frameHeight: 50 });
+        this.load.image('bullet', '../public/assets/bullet.png');
+        this.load.image('player', '../public/assets/player.png');
+        this.load.spritesheet('cent', '../public/assets/cent.png', { frameWidth: 50 , frameHeight: 50 });
+        this.load.spritesheet('stimulus', '../public/assets/sti.png', { frameWidth: 50 , frameHeight: 50 });
     }
 
     create()

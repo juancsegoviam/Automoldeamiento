@@ -1,11 +1,11 @@
 import Phaser from 'phaser';
-//import Tutorial from './scenes/Tutorial';
+import Tutorial from './scenes/Tutorial';
 //import Experimento from './scenes/Experimento'
 //import * as SceneKeys from './consts/SceneKeys'
 
 const config = {
-    width: 1505,
-    height: 705,
+    width: 1600,
+    height: 800,
     type: Phaser.Auto,
     //backgroundColor: '#616161',
     physics: {
@@ -20,6 +20,6 @@ const config = {
 
 const game = new Phaser.Game(config);
 
-//game.scene.add(SceneKeys.Tutorial, Tutorial);
+game.scene.add(SceneKeys.Tutorial, Tutorial);
 //game.scene.add(SceneKeys.Experimento, Experimento);
-//game.scene.start(SceneKeys.Tutorial)
+game.scene.start(SceneKeys.Tutorial)

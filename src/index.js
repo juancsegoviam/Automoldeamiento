@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
 import Tutorial from './scenes/Tutorial';
 //import Experimento from './scenes/Experimento'
-//import * as SceneKeys from './consts/SceneKeys'
+import * as SceneKeys from './consts/SceneKeys'
 
 const config = {
     width: 1505,

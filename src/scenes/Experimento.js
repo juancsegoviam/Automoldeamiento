@@ -54,10 +54,10 @@ export default class Experimento extends Phaser.Scene
 {
     preload()
     {
-        this.load.image('bullet', '../public/assets/bullet.png');
-        this.load.image('player', '../public/assets/player.png');
-        this.load.spritesheet('cent', '../public/assets/cent.png', { frameWidth: 50 , frameHeight: 50 });
-        this.load.spritesheet('stimulus', '../public/assets/sti.png', { frameWidth: 50 , frameHeight: 50 });
+        this.load.image('bullet', 'C:/Users/Juan Carlos/Desktop/Automoldeamiento/assets/bullet.png');
+        this.load.image('player', 'C:/Users/Juan Carlos/Desktop/Automoldeamiento/assets/player.png');
+        this.load.spritesheet('cent', 'C:/Users/Juan Carlos/Desktop/Automoldeamiento/assets/cent.png', { frameWidth: 50 , frameHeight: 50 });
+        this.load.spritesheet('stimulus', 'C:/Users/Juan Carlos/Desktop/Automoldeamiento/assets/sti.png', { frameWidth: 50 , frameHeight: 50 });
     }
 
     create()

@@ -40,12 +40,13 @@ var dataMatrix = {
 
 
 
-const listIti = [10000];
-const stiDur = 5000; 
-const reiDur = 15000;
+const listIti = [20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,
+  20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,];
+const stiDur = 3000; 
+const reiDur = 3000;
 //anterogrado = 1, retrogrado = 2
 const arreglo = 1;
-const dem = 1000;
+const dem = 3000;
 const ensayos = listIti.length
 
 
@@ -411,7 +412,6 @@ export default class Experimento extends Phaser.Scene
               {
                 console.log('ya estuvo');
                 clearInterval(intervol);
-                that.saveData(dataMatrix);
                 that.scene.stop('Experimento');
               }
             }

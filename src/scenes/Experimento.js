@@ -151,7 +151,7 @@ export default class Experimento extends Phaser.Scene
 
 
 
-      gameState.reinforcer = this.physics.add.sprite(780,120,'cent');
+      gameState.reinforcer = this.physics.add.sprite(820,120,'cent');
       gameState.reinforcer.anims.create(
         {
           key: 'hit',

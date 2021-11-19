@@ -151,7 +151,7 @@ export default class Experimento extends Phaser.Scene
 
 
 
-      gameState.reinforcer = this.physics.add.sprite(752,600,'cent');
+      gameState.reinforcer = this.physics.add.sprite(780,120,'cent');
       gameState.reinforcer.anims.create(
         {
           key: 'hit',
@@ -257,7 +257,7 @@ export default class Experimento extends Phaser.Scene
       if(gameState.cursors.left.isDown)
       {
         a += 0.1;
-        gameState.player.angle += 0.03;
+        gameState.player.angle += 0.01;
         if(a >= Phaser.Math.PI2)
         {
           a -= Phaser.Math.PI2
@@ -267,7 +267,7 @@ export default class Experimento extends Phaser.Scene
       if(gameState.cursors.right.isDown)
       {
         a -= 0.1;
-        gameState.player.angle += 0.03;
+        gameState.player.angle += 0.01;
         if(a >= Phaser.Math.PI2)
         {
           a -= Phaser.Math.PI2;

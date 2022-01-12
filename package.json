@@ -23,6 +23,7 @@
     "webpack-cli": "^4.9.1"
   },
   "dependencies": {
+    "dotenv": "^11.0.0",
     "express": "^4.17.1",
     "mongoose": "^6.1.6",
     "phaser": "^3.55.2",

@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "mongoose": "^6.1.6",
     "phaser": "^3.55.2",
     "phaser-webpack-loader": "^2.0.0"
   }

@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 const mongoose = require('mongoose');
-import dataMatrix from './src/scenes/Experimento'
+
 
 require('dotenv').config();
 

@@ -33,7 +33,7 @@ var end = 0;
 
 let pass = 0;
 
-var dataMatrix = new Note({
+const dataMatrix = new Note({
   tiempo:[],
   evento:[],
 })

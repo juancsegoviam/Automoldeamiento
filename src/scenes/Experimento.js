@@ -414,7 +414,7 @@ export default class Experimento extends Phaser.Scene
                 console.log('ya estuvo');
                 clearInterval(intervol);
                 that.scene.stop('Experimento');
-                require('../../server')
+        
                 
                 
               }

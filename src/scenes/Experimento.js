@@ -42,7 +42,7 @@ var dataMatrix = new Note({
 
 
 
-const listIti = [20000];
+const listIti = [10000];
 const stiDur = 3000; 
 const reiDur = 3000;
 //anterogrado = 1, retrogrado = 2
@@ -414,14 +414,8 @@ export default class Experimento extends Phaser.Scene
                 console.log('ya estuvo');
                 clearInterval(intervol);
                 that.scene.stop('Experimento');
-                dataMatrix.save()
-                 .then(result => {
-                   console.log(result);
-                   mongoose.connection.close();
-                  })
-                  .catch(err => {
-                    console.log(err)
-                  })
+                that.save();
+                
               }
             }
 
@@ -433,7 +427,17 @@ export default class Experimento extends Phaser.Scene
     }
 
 
-   
+   save(){
+    dataMatrix.save()
+    .then(result => {
+      console.log(result);
+      mongoose.connection.close();
+     })
+     .catch(err => {
+       console.log(err)
+     })
+
+   }
 
     
   

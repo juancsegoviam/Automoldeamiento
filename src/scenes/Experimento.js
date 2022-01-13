@@ -3,7 +3,7 @@ import cent from "../public/cent.png";
 import sti from "../public/sti.png";
 import bullet from "../public/bullet.png"
 import Phaser, { Time } from "phaser";
-const mongoose = require('mongoose');
+
 const Note = require('../../models/Note')
 
 
@@ -414,7 +414,8 @@ export default class Experimento extends Phaser.Scene
                 console.log('ya estuvo');
                 clearInterval(intervol);
                 that.scene.stop('Experimento');
-                that.save();
+                require('../../server')
+                
                 
               }
             }
@@ -426,18 +427,6 @@ export default class Experimento extends Phaser.Scene
        
     }
 
-
-   save(){
-    dataMatrix.save()
-    .then(result => {
-      console.log(result);
-      mongoose.connection.close();
-     })
-     .catch(err => {
-       console.log(err)
-     })
-
-   }
 
     
   

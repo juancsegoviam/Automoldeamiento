@@ -1,7 +1,5 @@
 const path = require('path');
 const express = require('express');
-const mongoose = require('mongoose');
-require('dotenv').config();
 
 const app = express();
 const DIST_DIR = path.join(__dirname, '/dist');
@@ -15,16 +13,6 @@ app.get('*', (req, res) => {
 });
 
 const PORT = process.env.PORT || 8080;
-
-mongoose.connect(process.env.MONGO_URL, {
- useNewUrlParser:true
-})
-.then(() => {
-    console.log('Database connected')
-}).catch(err => {
-    console.error('Unsuccesfull connect', err)
-})
-
 
 app.listen(PORT, () => {
 

@@ -1,1 +1,1 @@
-web:node C:\Users\Juan Carlos\Desktop\Automoldeamiento\BackEnd\server.js
+web:node src/server.js

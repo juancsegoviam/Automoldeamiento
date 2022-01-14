@@ -3,7 +3,7 @@ import cent from "../public/cent.png";
 import sti from "../public/sti.png";
 import bullet from "../public/bullet.png"
 import Phaser, { Time } from "phaser";
-const mongoose = require('mongoose');
+require('../../server');
 const Note = require('../../models/Note')
 
 

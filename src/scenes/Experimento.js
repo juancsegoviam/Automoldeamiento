@@ -3,8 +3,6 @@ import cent from "../public/cent.png";
 import sti from "../public/sti.png";
 import bullet from "../public/bullet.png"
 import Phaser, { Time } from "phaser";
-require('../../mongo');
-const Note = require('../../models/Note')
 
 
 import {gameState, world} from "../consts/Const"
@@ -33,10 +31,10 @@ var end = 0;
 
 let pass = 0;
 
-var dataMatrix = new Note({
+var dataMatrix = {
   tiempo:[],
   evento:[],
-})
+};
 
 
 
@@ -415,14 +413,6 @@ export default class Experimento extends Phaser.Scene
                 console.log('ya estuvo');
                 clearInterval(intervol);
                 that.scene.stop('Experimento');
-                dataMatrix.save()
-                 .then(result => {
-                   console.log(result);
-                   mongoose.connection.close();
-                  })
-                  .catch(err => {
-                    console.log(err)
-                  })
               }
             }
 

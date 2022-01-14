@@ -3,7 +3,7 @@ import cent from "../public/cent.png";
 import sti from "../public/sti.png";
 import bullet from "../public/bullet.png"
 import Phaser, { Time } from "phaser";
-require('../../server');
+require('../../mongo');
 const Note = require('../../models/Note')
 
 
@@ -42,7 +42,8 @@ var dataMatrix = new Note({
 
 
 
-const listIti = [20000];
+const listIti = [20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,
+  20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,];
 const stiDur = 3000; 
 const reiDur = 3000;
 //anterogrado = 1, retrogrado = 2

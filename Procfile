@@ -1,2 +1,1 @@
-cd BackEnd
-web: node server.js
+web: node ./BackEnd/server.js

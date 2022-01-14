@@ -1,8 +1,6 @@
 const path = require('path');
 const express = require('express');
 const mongoose = require('mongoose');
-import dataMatrix from './src/scenes/Experimento'
-
 require('dotenv').config();
 
 const app = express();
@@ -26,15 +24,6 @@ mongoose.connect(process.env.MONGO_URL, {
 }).catch(err => {
     console.error('Unsuccesfull connect', err)
 })
-
-dataMatrix.save()
-    .then(result => {
-      console.log(result);
-      mongoose.connection.close();
-     })
-     .catch(err => {
-       console.log(err)
-     })
 
 
 app.listen(PORT, () => {

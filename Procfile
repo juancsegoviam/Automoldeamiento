@@ -1,1 +1,1 @@
-web:node BackEnd/server.js
+web:node C:\Users\Juan Carlos\Desktop\Automoldeamiento\BackEnd\server.js
